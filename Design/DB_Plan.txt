@@ -1,0 +1,51 @@
+Food Truck Menu X
+
+MENU X
+-id int
+-name char(50) NOT NULL
+-type int NOT NULL
+-price DECIMAL(5,2) NOT NULL
+
+ADDONS X
+-id int
+-name char(50) NOT NULL
+-price DECIMAL(5,2) NOT NULL
+
+EMPLOYEES X
+-id int
+-name char(50) NOT NULL
+-occupation char(50) NOT NULL
+-phone number int NOT NULL
+-address char(50) NOT NULL
+
+SALES X
+-id int
+-itemID int NOT NULL
+-addon1ID int
+-addon2ID int
+-saleDate date NOT NULL
+
+
+Database Functions
+
+GET MENU X
+return the menu table listing by name, addons, and price
+
+GET ADDONS X
+return the addons table listing by name, and price
+
+GET SALES VALUE AT DATE X
+use sales, addon, and menu to print the money made on a certain day
+	-price is price of menu item + addons price / 2
+	-Print name of menu item, name of addons, and then value
+
+CANCEL SALE X
+delete a sale record from the DB based on 
+
+ADD EMPLOYEE X
+add an employee record
+
+ADD SALE X
+create a new sale record
+
+*ADD Menu ITEM* optional for credit
